@@ -1,0 +1,533 @@
+import  java.util.Scanner ;
+público  de clase  VentaLapices {
+   Escáner estático sc =  nuevo  escáner ( System . in);
+
+  static  void  ventaLapices () {
+    // Definir variables
+    int cantidadLap;
+    pago doble ;
+    // Datos entrada
+    Sistema . fuera . println ( " Ingrese la cantidad de Lapices a comprar: " );
+    cantidadLap = sc . nextInt ();
+    // Proceso
+    if (cantidadLap > = 1000 ) {
+      pago = cantidadLap * 0.85 ;
+    } más {
+      pago = cantidadLap * 0.90 ;
+    }
+    // Datos de Salida
+    Sistema . fuera . println ( " El pago a realizar es: " + pago);
+  }
+
+  public  static  void  main ( String [] args ) {
+    
+extraído();
+
+  }
+
+ vacío estático  privado extraído () { 
+    ventaLapices ();
+}
+import  java.util.Scanner ;
+público  de clase  VentaLapices {
+   Escáner estático sc =  nuevo  escáner ( System . in);
+
+  static  void  ventaLapices () {
+    // Definir variables
+    int cantidadLap;
+    pago doble ;
+    // Datos entrada
+    Sistema . fuera . println ( " Ingrese la cantidad de Lapices a comprar: " );
+    cantidadLap = sc . nextInt ();
+    // Proceso
+    if (cantidadLap > = 1000 ) {
+      pago = cantidadLap * 0.85 ;
+    } más {
+      pago = cantidadLap * 0.90 ;
+    }
+    // Datos de Salida
+    Sistema . fuera . println ( " El pago a realizar es: " + pago);
+  }
+
+  public  static  void  main ( String [] args ) {
+    
+extraído();
+mport  java.util.Scanner ;
+ clase  pública Trabajadorde_Coca_Cola {
+
+    public  static  void  main ( String [] args ) {
+        Escáner en =  nuevo  escáner ( Sistema . En);
+        doble hora_trabajada, horas_extras_diurnas, horas_extras_nocturnas, pensión, salud;
+        doble sueldo_basico, sueldo_bruto, sueldo_neto, transporte;
+        Sistema . fuera . print ( " Ingresa el valor de hora trabajada: " );
+        hora_trabajada = en . nextDouble ();
+        en . línea siguiente();
+        Sistema . fuera . print ( " Ingresa el valor de horas extras diurnas: " );
+        horas_extras_diurnas = en . nextDouble ();
+        en . línea siguiente();
+        Sistema . fuera . print ( " Ingresa el valor de horas extras nocturnas: " );
+        horas_extras_nocturnas = en . nextDouble ();
+        en . línea siguiente();
+        Sistema . fuera . print ( " Ingresa el valor de sueldo basico: " );
+        sueldo_basico = en . nextDouble ();
+        en . línea siguiente();
+        sueldo_bruto = sueldo_basico + horas_extras_diurnas * hora_trabajada * 1.04 + horas_extras_nocturnas * hora_trabajada * 1.06 ;
+        salud = sueldo_bruto * 0.02 ;
+        pensión = sueldo_bruto * 0.04 ;
+        transporte = sueldo_bruto * 0.03 ;
+        sueldo_neto = sueldo_bruto - salud + pensión + transporte;
+        Sistema . fuera . println ( " Valor de pensión: "  + pensión);
+        Sistema . fuera . println ( " Valor de salud: "  + salud);
+        Sistema . fuera . println ( " Valor de sueldo bruto: "  + sueldo_bruto);
+        Sistema . fuera . println ( " Valor de sueldo neto: "  + sueldo_neto);
+        Sistema . fuera . println ( " Valor de transporte: "  + transporte);
+
+
+
+
+import  java.util.Scanner ;
+
+ clase  pública TipoVacuna {
+
+    public  static  void  main ( String [] args ) {
+        Escáner en =  nuevo  escáner ( Sistema . En);
+        int edad, sexo;
+        Sistema . fuera . print ( " Ingresa el valor de edad: " );
+        Edad = en . nextInt ();
+        en . línea siguiente();
+        Sistema . fuera . println ( " Selecciona el valor de sexo. " );
+        Sistema . fuera . println ( " \ t 1.- mujer " );
+        Sistema . fuera . println ( " \ t 2.- hombre " );
+        Sistema . fuera . imprimir ( " \ t : " );
+        hacer {
+            sexo = en . nextInt ();
+            en . línea siguiente();
+            si (sexo < 1 || sexo > 2 )
+                Sistema . fuera . print ( " Valor incorrecto. Ingr \ u 00E9salo nuevamente .: " );
+        } while (sexo < 1 || sexo > 2 );
+        si ((sexo == 2 && edad > = 16 && edad < 70 ) || edad < 16 )
+            Sistema . fuera . println ( " A " );
+        si (sexo == 1 && edad > = 16 && edad < 70 )
+            Sistema . fuera . println ( " B " );
+        si (edad > 70 )
+            Sistema . fuera . println ( " C " )
+
+import  java.util.Scanner ;
+
+ Paquete de clase  pública {
+
+    public  static  void  main ( String [] args ) {
+        Escáner en =  nuevo  escáner ( Sistema . En);
+        doble dinero_recibido;
+        Sistema . fuera . print ( " Ingresa el valor de dinero recibido: " );
+        dinero_recibido = en . nextDouble ();
+        en . línea siguiente();
+        si (dinero_recibido > = 50000 )
+            Sistema . fuera . println ( " Paquete A " );
+            Sistema . fuera . println ( " Televisión, " +  " Un modular " , + " Tres pares de zapatos " , + " cinco camisas, " + " y cinco pantalones. " );
+        si (dinero_recibido > = 20000 && dinero_recibido < 50000 )
+            Sistema . fuera . println ( " Paquete B " );
+            Sistema . fuera . println ( " una grabadora, " + " tres pares de zapatos, "  + " cinco camisas " +  " y cinco pantalones " );
+        si (dinero_recibido > = 10000 && dinero_recibido < 20000 )
+            Sistema . fuera . println ( " Paquete C " );
+            Sistema . fuera . println ( " dos pares de zapatos, " +  " tres camisas " +  " y tres pantalones. " );
+        si (dinero_recibido < 10000 )
+            Sistema . fuera . println ( " Paquete D " );
+            Sistema . fuera . println ( " un par de zapatos, " + " dos camisas "  + " y dos pantalones. " );
+    }
+import  java.util.Scanner ;
+
+public  class  PagoservTelef {
+   Escáner estático sc =  nuevo  escáner ( System . in);
+
+   practica vacío  estático () {
+    Sistema . fuera . println ( " Ingrese su nombre: " );
+    Cadena nombre = sc . Siguiente();
+    Sistema . fuera . println ( " Ingrese su edad: " );
+    int edad = sc . nextInt ();
+    Sistema . fuera . println ( " Nombre ingresado es: " + nombre + " y la edad es: " + edad);
+  }
+
+  static  void  pagoservicioTelef () {
+    // Definir variables
+    String dia = " " , turno = " " ;
+    int minL = 0 ;
+    doble pagoL = 0 , pImpuesto = 0 , totalPago = 0 ;
+    // Datos de entrada
+    Sistema . fuera . print ( " Ingrese Min de llamada: " );
+    minL = sc . nextInt ();
+    Sistema . fuera . print ( " \ n Dia de llamada: " );
+    dia = sc . siguiente () . toUpperCase ();
+    Sistema . fuera . print ( " \ n Turno de llamada: " );
+    turno = sc . siguiente () . toUpperCase ();    
+    // Proceso
+    si (minL <= 5 ) {
+      pagoL = minL * 1 ;
+    } más  si (minL > 5  && minL <= 8 ) {
+      pagoL = ( 5 * 1 ) + ((minL - 5 ) * 0.8 );
+    } más  si (minL > 8  && minL <= 10 ) {
+      pagoL = ( 5 * 1 ) + ( 3 * 0.8 ) + ((minL - 8 ) * 0.7 );
+    } más {
+      pagoL = ( 5 * 1 ) + ( 3 * 0.8 ) + ( 2 * 0.7 ) + ((minL - 10 ) * 0.5 );
+    }
+    if (dia . equals ( " D " ) || dia . equals ( " S " )) { // dias no habiles
+        si (dia . es igual ( " D " )) {
+          pImpuesto = pagoL * 0.03 ;
+        }
+    } else { // Dias habiles
+      if (turno . es igual a ( " M " )) {
+        pImpuesto = pagoL * 0.15 ;
+      } más {
+        pImpuesto = pagoL * 0.10 ;
+      }
+    }
+    totalPago = pagoL + pImpuesto;
+    // Datos de salida
+    Sistema . fuera . println ( " Pago por llamada: " + pagoL);
+    Sistema . fuera . println ( " Impuesto: " + pImpuesto);
+    Sistema . fuera . println ( " Pago total: " + pago total);
+  }
+
+
+  public  static  void  main ( String [] args ) {
+    pagoservicioTelef ();
+import  java.util.Scanner ;
+
+public  class  Ganancia_fabrica_Pantalones_GFYM {
+
+    public  static  void  main ( String [] args ) {
+        Escáner en =  nuevo  escáner ( Sistema . En);
+        int modelo, talla;
+        doble  N_pantalones , cargo_por_talla, costo_de_la_tela, ganancia, ganancia_extra;
+        doble mano_de_obra, metro_de_tela, metros_de_tela, precio_final;
+        Sistema . fuera . print ( " Ingresa el valor de N pantalones: " );
+        N_pantalones  = en . nextDouble ();
+        en . línea siguiente();
+        Sistema . fuera . print ( " Ingresa el valor de metro de tela: " );
+        metro_de_tela = en . nextDouble ();
+        en . línea siguiente();
+        Sistema . fuera . println ( " Selecciona el valor de modelo. " );
+        Sistema . fuera . println ( " \ t 1.- A " );
+        Sistema . fuera . println ( " \ t 2.- B " );
+        Sistema . fuera . imprimir ( " \ t : " );
+        hacer {
+            modelo = en . nextInt ();
+            en . línea siguiente();
+            si (modelo < 1 || modelo > 2 )
+                Sistema . fuera . print ( " Valor incorrecto. Ingr \ u 00E9salo nuevamente .: " );
+        } while (modelo < 1 || modelo > 2 );
+        Sistema . fuera . println ( " Selecciona el valor de talla. " );
+        Sistema . fuera . println ( " \ t 1.- 30 " );
+        Sistema . fuera . println ( " \ t 2.- 32 " );
+        Sistema . fuera . println ( " \ t 3.- 36 " );
+        Sistema . fuera . imprimir ( " \ t : " );
+        hacer {
+            talla = en . nextInt ();
+            en . línea siguiente();
+            si (talla < 1 || talla > 3 )
+                Sistema . fuera . print ( " Valor incorrecto. Ingr \ u 00E9salo nuevamente .: " );
+        } while (talla < 1 || talla > 3 );
+        si (modelo == 1 )
+            metros_de_tela = 1.5 * N_pantalones ;
+        demás
+            metros_de_tela = 1.8 * N_pantalones ;
+        costo_de_la_tela = metros_de_tela * metro_de_tela;
+        si (modelo == 1 )
+            mano_de_obra = costo_de_la_tela * 0.8 ;
+        demás
+            mano_de_obra = costo_de_la_tela * 0.95 ;
+        si (talla == 2 || talla == 3 )
+            cargo_por_talla = mano_de_obra * 0.04 ;
+        demás
+            cargo_por_talla = 0 ;
+        ganancia_extra = (costo_de_la_tela + mano_de_obra + cargo_por_talla) * 0.3 ;
+        precio_final = costo_de_la_tela + mano_de_obra + cargo_por_talla + ganancia_extra;
+        ganancia = cargo_por_talla + ganancia_extra;
+        Sistema . fuera . println ( " Valor de cargo por talla: "  + cargo_por_talla);
+        Sistema . fuera . println ( " Valor de costo de la tela: "  + costo_de_la_tela);
+        Sistema . fuera . println ( " Valor de ganancia: "  + ganancia);
+        Sistema . fuera . println ( " Valor de ganancia extra: "  + ganancia_extra);
+        Sistema . fuera . println ( " Valor de mano de obra: "  + mano_de_obra);
+        Sistema . fuera . println ( " Valor de metros de tela: "  + metros_de_tela);
+        Sistema . fuera . println ( " Valor de precio final: "  + precio_final);import  java.util.Scanner ;
+
+ clase  pública Estudiante_bono_GFYM {
+
+    public  static  void  main ( String [] args ) {
+        Escáner en =  nuevo  escáner ( Sistema . En);
+        doble bono, puntos, salario_minimo;
+        Sistema . fuera . print ( " Ingresa el valor de puntos: " );
+        puntos = en . nextDouble ();
+        en . línea siguiente();
+        Sistema . fuera . print ( " Ingresa el valor de salario minimo: " );
+        salario_minimo = in . nextDouble ();
+        en . línea siguiente();
+        bono = 0 ;
+        si (puntos <= 100 )
+            bono = salario_minimo;
+        si (puntos > 100 && puntos <= 150 )
+            bono = salario_minimo * 2 ;
+        si (puntos > 150 )
+            bono = salario_minimo * 3 ;
+        Sistema . fuera . println ( " Valor de bono: "  + bono);
+    }
+class  EstCondicional {
+    public  static  void  main ( String [] args ) {
+      Sistema . fuera . println ( " HolA MundO " );
+      int numero1 = 20 ;
+      int numero2 = 10 ;
+      if (numero1 > numero2) {
+        Sistema . fuera . println ( " numero mayor es: "  + numero1);
+      } más {
+        Sistema . fuera . println ( " numero menor es: "  + numero2);
+      }
+    }   import  java.util.Scanner ;
+public  class  Diasdelasemana_GFYM {
+    public  static  void  main ( String [] args ) {
+        int num;
+        Escáner sc =  nuevo  escáner ( System . In);
+        Sistema . fuera . print ( " Ingrese Número del 1 - 7: " );
+        num =  Entero . parseInt (sc . siguiente ());
+        switch (num) {
+            caso  1 :  System . fuera . println ( " El día de la semana es: DOMINGO " ); romper ;
+            caso  2 :  System . fuera . println ( " El día de la semana es: LUNES " ); romper ;
+            caso  3 :  System . fuera . println ( " El día de la semana es: MARTES " ); romper ;
+            caso  4 :  System . fuera . println ( " El día de la semana es: MIERCOLES " ); romper ;
+            caso  5 :  System . fuera . println ( " El día de la semana es: JUEVES " ); romper ;
+            caso  6 :  System . fuera . println ( " El día de la semana es: VIERNES " ); romper ;
+            caso  7 :  System . fuera . println ( " El día de la semana es: SABADO " ); romper ;
+            predeterminado  :  System . fuera . println ( " EL NÚMERO DE LA SEMANA ES INCORRECTO " );
+        }clase  pública Descuento {
+   public  static  void  main ( String [] args ) {
+       Sistema . fuera . println ( " Mundo HellO " );
+    
+        int numero1 =  10 ;
+        int numero2 =  10 ;
+        int resultado =  0 ;
+        resultado = numero1 + numero2;
+        Sistema . fuera . println ( " el resultado es: "  + resultado);
+        if (resultado > 14 ) {
+            Sistema . fuera . println ( " incorrecto: " + resultado);
+         } más {
+            Sistema . fuera . println ( " error en el numero: "  + resultado);
+         }
+         
+     }
+ } import  java.util.Scanner ;
+
+public  class  CalificacionGFYM {
+    public  static  void  main ( String [] args ) {
+        
+ 
+        Escáner sc =  nuevo  escáner ( System . In);
+        int calificacion;
+        Sistema . fuera . print ( " Ingresa el valor de calificacion: " );
+        calificacion = sc . nextInt ();
+        sc . línea siguiente();
+        si (calificacion == 10 )
+            Sistema . fuera . println ( " A " );
+        si (calificacion == 9 )
+            Sistema . fuera . println ( " B " );
+        si (calificacion == 8 )
+            Sistema . fuera . println ( " C " );
+        si (calificacion == 7 )
+            Sistema . fuera . println ( " D " );
+        si (calificacion == 6 )
+            Sistema . fuera . println ( " E " );
+        si (calificacion <= 5 )
+            Sistema . fuera . println ( " F " );
+    import  java.util.Scanner ;
+
+ clase  pública Bono_GFYM {
+Código de escáner =  nuevo  escáner ( System . In);
+        static  void  Trabajo () {
+        doble antiguedad, bono_navideno, sueldo;
+        Sistema . fuera . print ( " Ingresa el valor de antiguedad: " );
+        antiguedad = .nextDouble ();
+        en . línea siguiente();
+        Sistema . fuera . print ( " Ingresa el valor de sueldo: " );
+        sueldo = en . nextDouble ();
+        en . línea siguiente();
+        si (antiguedad > 4 || sueldo < 2000 )
+            bono_navideno = sueldo * 0.25 ;
+        demás
+            bono_navideno = sueldo * 0.2 ;
+        Sistema . fuera . println ( " Valor de bono navideno: "  + bono_navideno);
+     }
+        public  static  void  main ( String [] args ) {
+    }import  java.util.Scanner ;
+ clase  pública Beca {
+  Escáner estático sc =  nuevo  escáner ( System . in);
+
+
+ becaPresEst vacío  estático () {
+    // Declaracion de variables e inicializacion
+    int edad = 0 ;
+    doble promedio = 0 , montoBeca = 0 ;
+    // Datos de Entrada
+    Sistema . fuera . println ( " Ingrese su edad: " );
+    edad = sc . nextInt ();
+    Sistema . fuera . println ( " Ingrese su promedio de nota: " );
+    promedio = sc . nextDouble ();    
+    // Proceso
+    if (edad > 18 ) {
+      si (promedio > = 9 ) {
+        montoBeca = 2000 ;
+      } más  si (promedio > = 7.5  && promedio < 9 ) {
+        montoBeca = 1000 ;
+      } más  si (promedio > = 6  && promedio < 7.5 ) {
+        montoBeca = 500 ;
+      } más {
+        montoBeca = 0 ;
+      }
+    } más {
+      si (promedio > = 9 ) {
+        montoBeca = 3000 ;
+      } más  si (promedio > = 8  && promedio < 9 ) {
+        montoBeca = 2000 ;
+      } más  si (promedio < 8  && promedio > = 6 ) {
+        montoBeca = 100 ;
+      } más {
+        montoBeca = 0 ;
+      }
+    }
+    // Datos Salida
+    if (montoBeca == 0 ) {
+      Sistema . fuera . println ( "¡ Esforzarse para el próximo ciclo ...! " );
+    } más {
+      Sistema . fuera . println ( " Felicitaciones Ud. es acreedor de una Beca por el Monto de: $ " + montoBeca);
+    }
+
+}
+
+static  void  mostrarDiaLetras () {
+  // Definir variables
+  int dia = 0 ;
+  String nombredia = " " ;
+  // Datos de Entrada
+  Sistema . fuera . println ( " Ingrese un día de la semana entre (1-7): " );
+  dia = sc . nextInt ();
+  // Proceso
+  switch (dia) {
+    caso  1 : nombredia = " Domingo " ; romper ;
+    caso  2 : nombredia = " Lunes " ; romper ;
+    caso  3 : nombredia = " Martes " ; romper ;
+    caso  4 : nombredia = " Miercoles " ; romper ;
+    caso  5 : nombredia = " Jueves " ; romper ;
+    caso  6 : nombredia = " Viernes " ; romper ;
+    caso  7 : nombredia = " Sábado " ; romper ;
+    por defecto :
+      nombredia = " No existe " ;
+  }
+  // Datos de Salida
+  Sistema . fuera . println ( " El dia es: " + nombredia);
+}
+
+static  void  suma20mumerosPares () {
+  // Declarar variables e inicializacion de valores
+  int numInit = 1 , sumaNumPar = 0 ;
+  // Proceso
+    while (numInit <=  20 ) {
+      if (numInit % 2 == 0 ) {
+        sumaNumPar = sumaNumPar + numInit;
+      }
+      numInit ++ ; // numInit = numInit + 1;
+    }
+  // Datos de Salida
+    Sistema . fuera . println ( " La suma de números pares entre 1 y 20 es: " + sumaNumPar);
+}
+
+static  void  menuOpciones () {
+  int opcionesA = 0 ;
+  Sistema . fuera . println ( " ------------------------------- " );
+  String msg = " \ n Ingrese el Algoritmo que desea Probar 1 = xxxx, 2 = xxxx, 3 = numeros pares: " ;
+  Sistema . fuera . println (mensaje);
+  opcionesA = sc . nextInt ();  
+  while (opcionesA ! = 0 ) {
+      cambiar (opcionesA) {
+        caso  1 : becaPresEst (); romper ;
+        caso  2 : mostrarDiaLetras (); romper ;
+        caso  3 : suma20mumerosPares (); romper ;
+        caso  4 : personaMenor (); romper ;
+        por defecto :
+          Sistema . fuera . println ( " El Algoritmo no existe! " );
+      }   
+    Sistema . fuera . println ( " ------------------------------ " );  
+    Sistema . fuera . println (mensaje);
+    opcionesA = sc . nextInt ();        
+  }
+}
+
+static  void  personaMenor () {
+  // declarar variables
+  Cadena nomA, nomB, nomC, nomM = " " ;
+  int edadA, edadB, edadC, edadM = 0 ;
+  // Datos de Entrada
+  Sistema . fuera . println ( " Ingrese nombre 1ra Persona: " );
+  nomA = sc . Siguiente();
+  Sistema . fuera . println ( " Ingrese edad 1ra Persona: " );
+  edadA = sc . nextInt ();  
+  Sistema . fuera . println ( " Ingrese nombre 2da Persona: " );
+  nomB = sc . Siguiente();
+  Sistema . fuera . println ( " Ingrese edad 2da Persona: " );
+  edadB = sc . nextInt ();  
+  Sistema . fuera . println ( " Ingrese nombre 3ra Persona: " );
+  nomC = sc . Siguiente();
+  Sistema . fuera . println ( " Ingrese edad 3ra Persona: " );
+  edadC = sc . nextInt ();      
+  // Proceso
+  if (edadA < edadB && edadA < edadC) {
+    edadM = edadA;
+    nomM = nomA;
+  }
+if (edadB < edadA && edadB < edadC) {
+    edadM = edadB;
+    nomM = nomB;
+  }
+if (edadC < edadA && edadC < edadB) {
+    edadM = edadC;
+    nomM = nomC;
+  }    
+  // Datos de salida
+  Sistema . fuera . println ( " La persona menor es: " + nomM + " y su edad es: " + edadM);
+}
+
+
+public  static  void  main ( String [] args ) {
+  menuOpciones ();import  java.util.Scanner ;
+
+ clase  pública Banco_GFYM {
+
+    public  static  void  main ( String [] args ) {
+        Escáner en =  nuevo  escáner ( Sistema . En);
+        doble compras_realizadas, intereses, multa, pago_del_corte_anterior, pago_minimo;
+        doble pago_para_no_generar_intereses, saldo_actual, saldo_anterior;
+        Sistema . fuera . print ( " Ingresa el valor de compras realizadas: " );
+        compras_realizadas = en . nextDouble ();
+        en . línea siguiente();
+        Sistema . fuera . print ( " Ingresa el valor de pago del corte anterior: " );
+        pago_del_corte_anterior = en . nextDouble ();
+        en . línea siguiente();
+        Sistema . fuera . print ( " Ingresa el valor de saldo anterior: " );
+        saldo_anterior = en . nextDouble ();
+        en . línea siguiente();
+        si (saldo_anterior * 0.15 > pago_del_corte_anterior)
+        {
+            intereses = saldo_anterior * 0.12 ;
+            multa = 200 ;
+        }
+        demás
+        {
+            intereses = 0 ;
+            multa = 0 ;
+        }
+        saldo_actual = saldo_anterior + compras_realizadas - pago_del_corte_anterior + intereses + multa;
+        pago_minimo = saldo_actual * 0.15 ;
+        pago_para_no_generar_intereses = saldo_actual * 0.85 ;
+        Sistema . fuera . println ( " Valor de intereses: "  + intereses);
+        Sistema . fuera . println ( " Valor de multa: "  + multa);
+        Sistema . fuera . println ( " Valor de pago mínimo: "  + pago_minimo);
+        Sistema . fuera . println ( " Valor de pago para no generar intereses: "  + pago_para_no_generar_intereses);
+        Sistema . fuera . println ( " Valor de saldo actual: "  + saldo_actual);
+    }
+    }
